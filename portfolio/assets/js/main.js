@@ -61,11 +61,8 @@ sr.reveal('.about-text', {delay: 500})
 sr.reveal('.about-social-icon', {delay: 600, interval: 200})
 
 
-// sr.reveal('.skills__subtitle', {})
-// sr.reveal('.skills__name', {distance: '20px', delay: 50, interval: 100})
-// sr.reveal('.skills__img', {delay: 400})
-
 sr.reveal('.skills-img', {interval: 200})
+
 
 sr.reveal('.portfolio-img', {interval: 200})
 
