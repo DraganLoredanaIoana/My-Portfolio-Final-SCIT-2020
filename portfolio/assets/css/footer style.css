@@ -18,7 +18,9 @@
 .footer-social{
     font-size: 1.5rem;
     margin-right: var(--mb-1);
+    color: white;
 }
 .footer-social:hover{
     color: var(--first-color);
 }
+

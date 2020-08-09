@@ -86,9 +86,9 @@
                         </p>
 
                         <div class="about-social">
-                            <a href="https://www.linkedin.com/in/dr%C4%83gan-loredana-059477104/" class="about-social-icon"><i class='bx bxl-linkedin' style="color: #343434;"></i></a>
-                            <a href="https://github.com/DraganLoredanaIoana?tab=repositories" class="about-social-icon"><i class='bx bxl-github' style="color: #343434;" ></i></a>
-                            <a href="https://dribbble.com/LoreDIoana" class="about-social-icon"><i class='bx bxl-dribbble' style="color: #343434;" ></i></a>
+                            <a href="https://www.linkedin.com/in/dr%C4%83gan-loredana-059477104_/"target="_blank"class="about-social-icon"><i class='bx bxl-linkedin' style="color: #343434;"></i></a>
+                            <a href="https://github.com/DraganLoredanaIoana?tab=repositories"target="_blank"class="about-social-icon"><i class='bx bxl-github' style="color: #343434;" ></i></a>
+                            <a href="https://dribbble.com/LoreDIoana" target="_blank" class="about-social-icon"><i class='bx bxl-dribbble' style="color: #343434;" ></i></a>
                         </div>
                     </div>
                 </div>
@@ -103,35 +103,35 @@
                     <div class="skills-img">
                         <img src="assets/img/html.png" alt="">
                         <div class="skills-link">
-                            <a href="https://github.com/DraganLoredanaIoana?tab=repositories" class="skills-link-name">HTML</a>
+                            <a href="https://github.com/DraganLoredanaIoana?tab=repositories"target="_blank" class="skills-link-name">HTML</a>
                         </div>
                     </div>
 
                     <div class="skills-img">
                         <img src="assets/img/css.png" alt="">
                         <div class="skills-link">
-                            <a href="https://github.com/DraganLoredanaIoana?tab=repositories" class="skills-link-name">CSS</a>
+                            <a href="https://github.com/DraganLoredanaIoana?tab=repositories"target="_blank" class="skills-link-name">CSS</a>
                         </div>
                     </div>
 
                     <div class="skills-img">
                         <img src="assets/img/js.png" alt="">
                         <div class="skills-link">
-                            <a href="https://github.com/DraganLoredanaIoana?tab=repositories" class="skills-link-name">Java Script</a>
+                            <a href="https://github.com/DraganLoredanaIoana?tab=repositories"target="_blank" class="skills-link-name">Java Script</a>
                         </div>
                          </div>
 
                          <div class="skills-img">
                         <img src="assets/img/3d.png" alt="">
                         <div class="skills-link">
-                            <a href="https://www.behance.net/loredanaioana" class="skills-link-name">3D</a>
+                            <a href="https://www.behance.net/loredanaioana"target="_blank" class="skills-link-name">3D</a>
                         </div>
                          </div>
 
                          <div class="skills-img">
                             <img src="assets/img/graphic.png" alt="">
                         <div class="skills-link">
-                        <a href="https://www.behance.net/loredanaioana" class="skills-link-name">Graphic Design</a>
+                        <a href="https://www.behance.net/loredanaioana"target="_blank" class="skills-link-name">Graphic Design</a>
                             </div>
                              </div>
 
@@ -139,7 +139,7 @@
                 <div class="skills-img">
                     <img src="assets/img/product.png" alt="">
                     <div class="skills-link">
-                        <a href="https://www.behance.net/loredanaioana" class="skills-link-name">Product Design</a>
+                        <a href="https://www.behance.net/loredanaioana"target="_blank"class="skills-link-name">Product Design</a>
                     </div>
                  </section>
 
@@ -152,7 +152,7 @@
                     <div class="portfolio-img">
                         <img src="assets/img/project.png" alt="">
                        <div class="portfolio-link">
-                            <a href="https://github.com/DraganLoredanaIoana/Homework3" class="portfolio-link-name">HTML & CSS Based Project</a>
+                            <a href="https://github.com/DraganLoredanaIoana/Homework3"target="_blank"class="portfolio-link-name">HTML & CSS Based Project</a>
                         </div>
                     </div>
 
@@ -160,7 +160,7 @@
                     <div class="portfolio-img">
                         <img src="assets/img/game.png" alt="">
                       <div class="portfolio-link">
-                            <a href="https://github.com/DraganLoredanaIoana/Homework2" class="portfolio-link-name">Scissors/Paper/Stone Game</a>
+                            <a href="https://github.com/DraganLoredanaIoana/Homework2"target="_blank"class="portfolio-link-name">Scissors/Paper/Stone Game</a>
                         </div>
                     </div>
 
@@ -168,7 +168,7 @@
                     <div class="portfolio-img">
                         <img src="assets/img/popwatch.png" alt="">
                       <div class="portfolio-link">
-                            <a href="https://github.com/DraganLoredanaIoana/Homework4" class="portfolio-link-name">Teamwork Movie Project</a>
+                            <a href="https://github.com/DraganLoredanaIoana/Homework4"target="_blank"class="portfolio-link-name">Teamwork Movie Project</a>
                         </div>
                     </div>
                  </div>
@@ -194,17 +194,46 @@
             <span class="contact-text">Cluj-Napoca, Romania</span>
         </div>
 
-        <form action="" class="contact-form">
+        <!-- Form  -->
+        <form method="POST" class="contact-form" action="https://api.slapform.com/dragan.loreioana@gmail.com" onsubmit="return validateForm()">
+
             <div class="contact-inputs">
-                <input type="text" placeholder="Name" class="contact-input">
-                <input type="mail" placeholder="Email" class="contact-input">
+                <input type="email" placeholder="Email" name="email" class="contact-input">
+                <input type="text" placeholder="Title" name="title" class="contact-input">
             </div>
-
-            <textarea name="" id="" cols="0" rows="10" class="contact-input"></textarea>
-
-            <input type="submit" value="Send" class="contact-button">
+          
+            <span id="error-message"></span>
+            <textarea name="message" type="textarea" placeholder="Message" class="contact-inputnew"></textarea>
+           <button type="submit" value="Send" class="contact-button">Submit</button>
         </form>
-    </div>
+
+
+
+        <!-- <form id="myform" method="post">
+            <label>reply_to</label>
+            <input type="text" name="reply_to" />
+            <label>from_name</label>
+            <input type="text" name="from_name" />
+            <label>to_name</label>
+            <input type="text" name="to_name" />
+            <label>message_html</label>
+            <input type="text" name="message_html" />
+            <br><br>
+            <button>
+            Send
+            </button>
+            </form>
+            
+            <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+            
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/dragan.loreioana@gmail.com/dist/email.min.js"></script>
+            <script type="text/javascript">
+               (function(){
+                  emailjs.init("gmail");
+               })();
+            </script> -->
+            
+         </div>
 </section>
 </main>
 
@@ -217,9 +246,9 @@
                 </div>
 
               <div class="footer-data">
-                   <a href="https://www.facebook.com/loredanaioana.dragan?ref=bookmarks" class="footer-social"><i class='bx bxl-facebook' ></i></a>
-                    <a href="https://www.instagram.com/loredana.dragan/" class="footer-social"><i class='bx bxl-instagram' ></i></a>
-                    <a href="https://twitter.com/?lang=en" class="footer-social"><i class='bx bxl-twitter' ></i></a>
+                   <a href="https://www.facebook.com/loredanaioana.dragan?ref=bookmarks"target="_blank" class="footer-social"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.instagram.com/loredana.dragan/"target="_blank" class="footer-social"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://twitter.com/?lang=en"target="_blank"class="footer-social"><i class='bx bxl-twitter' ></i></a>
                 </div>
 </div>
         </footer>
@@ -227,6 +256,9 @@
      
         <script src="https://unpkg.com/scrollreveal"></script>
         <script src="assets/js/main.js"></script>
+
+        <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/dragan.loreioana@gmail.com/dist/email.min.js">
+        </script> -->
         
     </body>
 </html>

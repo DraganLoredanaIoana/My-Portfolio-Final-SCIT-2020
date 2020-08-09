@@ -1,4 +1,3 @@
-
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
     nav = document.getElementById(navId)
@@ -73,5 +72,60 @@ sr.reveal('.contact-input', {delay: 400})
 sr.reveal('.contact-button', {delay: 600})
 
 
+// function validateForm(){
+// 	var name = document.forms["post"]["your-name"].value;
+// 	var email = document.forms["post"]["your-email"].value;
+// 	var message = document.forms["post"]["your-message"].value;
+
+// 	if (name.length<1) {
+//         document.getElementById('error-name').innerHTML = " Please Enter Your Name *"
+//     }
+//     if (email.length<1) {
+//         document.getElementById('error-email').innerHTML = " Please Enter Your Email *";
+//     }
+
+//     }
+//     if (message.length<1) {
+//         document.getElementById('error-message').innerHTML = " Please Enter Your Message *";
+//     }          
+//     if(name.length<1 || email.length<1 || message.length<1){
+//        	return false;
+//     }            
+
+// (function() {
+//     emailjs.init("user_UfccqHfPSZqfYub04ZRlM"); //please encrypted user id for malicious attacks
+//   })();
+// //set the parameter as per you template parameter[https://dashboard.emailjs.com/templates]
+//   var templateParams = {
+//     to_name: 'xyz',
+//     from_name: 'abc',
+//     message_html: 'Please Find out the attached file'
+//   };
+
+//   emailjs.send('loredana', 'YOUR_TEMPLATE_ID', templateParams)
+//     .then(function(response) {
+//       console.log('SUCCESS!', response.status, response.text);
+//     }, function(error) {
+//       console.log('FAILED...', error);
+//     });
 
 
+// var myform = $("form#myform");
+// myform.submit(function(event){
+// 	event.preventDefault();
+
+//   // Change to your service ID, or keep using the default service
+//   var service_id = "gmail";
+//   var template_id = "template_OajPEu62";
+
+//   myform.find("button").text("Sending...");
+//   emailjs.sendForm(service_id,template_id,myform[0])
+//   	.then(function(){ 
+//     	alert("Sent!");
+//        myform.find("button").text("Send");
+//     }, function(err) {
+//        alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+//        myform.find("button").text("Send");
+//     });
+//   return false;
+// });
